@@ -13,7 +13,7 @@ void setup() {
   text("Welcome to Guess the Word", 10, 50); // Text for the first 5 seconds
   textSize(24);
   fill(0, 80, 90);
-  text("Write Your Answer Here", 115, 500); 
+  text("Letters go here", 115, 500); 
   noFill();
   rect(60, 200, 60, 60);
   rect(165, 200, 60, 60);
@@ -21,3 +21,6 @@ void setup() {
   rect(385, 200, 60, 60);
   
 }
+
+void draw() {
+  
