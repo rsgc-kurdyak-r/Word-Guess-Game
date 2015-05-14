@@ -1,6 +1,6 @@
 // Robert Kurdyak, May 12, 2015
 
-
+int [] x = new int [5];
 
 void setup() {
 
@@ -13,14 +13,20 @@ void setup() {
   text("Welcome to Guess the Word", 10, 50); // Text for the first 5 seconds
   textSize(24);
   fill(0, 80, 90);
-  text("Letters go here", 115, 500); 
+  text("A", 82, 537);
+  text("B", 187, 537);
+  text("C", 292, 537);
+  text("D", 397, 537);
   noFill();
   rect(60, 200, 60, 60);
   rect(165, 200, 60, 60);
   rect(270, 200, 60, 60);
-  rect(385, 200, 60, 60);
+  rect(375, 200, 60, 60);
   
 }
 
 void draw() {
   
+  
+  
+}
