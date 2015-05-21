@@ -1,6 +1,8 @@
 // Robert Kurdyak, May 12, 2015
 
-int [] x = new int [5];
+float xShift;
+float yShift;
+
 
 void setup() {
 
@@ -13,7 +15,7 @@ void setup() {
   text("Welcome to Guess the Word", 10, 50); // Text for the first 5 seconds
   textSize(24);
   fill(0, 80, 90);
-  text("A", 82, 537);
+  text("A", xShift, );
   text("B", 187, 537);
   text("C", 292, 537);
   text("D", 397, 537);
@@ -27,6 +29,6 @@ void setup() {
 
 void draw() {
   
-  
+  if (mouseX < 
   
 }
