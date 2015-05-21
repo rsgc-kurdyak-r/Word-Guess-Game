@@ -42,7 +42,7 @@ void setup() {
 
 void draw() {
   
-  if(mouseX > x - 20 (&&) mouseX < x + 20 (&&) mouseY > y - 20 (&&) mouseY < x + 20) {
+  if(mouseX > x - 20 (&&) < x + 20 (&&) mouseY > y - 20 (&&) < x + 20) {
    
     y = y - yShift;
     
