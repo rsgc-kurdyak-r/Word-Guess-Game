@@ -1,7 +1,7 @@
 // Robert Kurdyak, May 12, 2015
 
 int [] xShift = new int [4];
-float yShift = 337; // the letters' vertical shift after being clicked
+float yShift = 300; // the letters' vertical shift after being clicked
 float x1 = 82;
 float y = 537;
 float x2 = 187;
@@ -10,15 +10,15 @@ float x4 = 397;
 
 int word = int(random(0, 4));
 String[] pickword = {
-  "fang",
-  "yarn",
+  "fang", 
+  "yarn", 
   "frog"
 };
 
 void setup() {
 
-  
-  
+
+
   // Setting up the basic look of the game
   colorMode(HSB, 360, 100, 100); // Changing the color wheel to HSB format
   size(500, 700);
@@ -37,15 +37,15 @@ void setup() {
   rect(165, 200, 60, 60);
   rect(270, 200, 60, 60);
   rect(375, 200, 60, 60);
-  
 }
 
 void draw() {
-  
-  if(mouseX > x - 20 (&&) < x + 20 (&&) mouseY > y - 20 (&&) < x + 20) {
-   
+
+  if (mouseX > x1 - 20 && mouseX < x1 + 20 && mouseY > y - 20 && mouseY < y + 20) {
+
     y = y - yShift;
-    
+    text("A", x1, y);
   }
- 
+if (mouseX > x2 - 20 && mouseX <
+
 }
