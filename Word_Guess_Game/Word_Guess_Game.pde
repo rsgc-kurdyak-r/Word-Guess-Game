@@ -10,7 +10,12 @@ float y1 = 537;
 float y2 = 537;
 float y3 = 537;
 float y4 = 537;
+float counter = 60;
 
+Pfont font; // Create a timer that counts down from 60
+String time = "010"
+int t
+int interval = 60;
 };
 
 void setup() {
@@ -18,19 +23,25 @@ void setup() {
   // Setting up the basic look of the game
   size(500, 700);
   
+  
+  
+
+
 }
 
 void draw() {
+  
+  
   
   textSize(36);
   fill(240, 80, 90);
   text("Welcome to Guess the Word", 10, 50); // Text for the first 5 seconds
   textSize(24);
   fill(0, 80, 90);
-  text("A", x1, y1);
-  text("B", x2, y2);
-  text("C", x3, y3);
-  text("D", x4, y4);
+  text("N", x1, y1);
+  text("G", x2, y2);
+  text("F", x3, y3);
+  text("A", x4, y4);
   noFill();
   rect(60, 200, 60, 60);
   rect(165, 200, 60, 60);
