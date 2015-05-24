@@ -41,11 +41,25 @@ void setup() {
 
 void draw() {
 
-  if (mouseX > x1 - 20 && mouseX < x1 + 20 && mouseY > y - 20 && mouseY < y + 20) {
+  if (mouseX > x1 - 20 && mouseX < x1 + 20 && mouseY > y - 20 && mouseY < y + 20) { // If the mouse is within the coordinates of the first letter, move it up 300 units
 
-    y = y - yShift;
+    y = y - yShift; // Moving the text up 
+    
     text("A", x1, y);
   }
-if (mouseX > x2 - 20 && mouseX <
-
+  
+  if (mouseX > x2 - 20 && mouseX < x2 + 20 && mouseY > y - 20 && mouseY < y + 20) { // If the mouse is within the coordinates of the second letter, move it up 300 units
+    
+    y = y - yShift;
+    
+    text("B", x2, y); // Moving the text up
+  }
+  
+  if (mouseX > x3 - 20 && mouseX < x3 + 20 && mouseY > y - 20 && mouseY < y + 20) { // If the mouse is within the coordinates of the third letter, move it up 300 units
+  
+  y = y - yShift;
+  
+  text("C", x3, y); // Moving the text up
+}
+  
 }
