@@ -1,5 +1,6 @@
 // Robert Kurdyak, May 12, 2015
 
+PFont font; // Create a timer that counts down from 60
 
 float yShift = 300; // the letters' vertical shift after being clicked
 float x1 = 82;
@@ -12,18 +13,18 @@ float y3 = 537;
 float y4 = 537;
 float counter = 60;
 
-Pfont font; // Create a timer that counts down from 60
-String time = "010"
-int t
+
+String time = "010";
+int t;
 int interval = 60;
-};
+
 
 void setup() {
 
   // Setting up the basic look of the game
   size(500, 700);
   
-  
+  font = createFont("Arial", 30);
   
 
 
@@ -31,7 +32,14 @@ void setup() {
 
 void draw() {
   
+  t = interval-int(millis()/1000);
+    time = nf(t , 3);
+    if(t == 0){
+      println("GAME OVER");
+    interval+=60;
+  }
   
+  text(time, 470, 670);
   
   textSize(36);
   fill(240, 80, 90);
@@ -52,7 +60,7 @@ void draw() {
 
     y1 = y1 - yShift; // Moving the text up 
     
-    text("A", x1, y1);
+    
     
     fill(203, 203, 203);
     noStroke();
@@ -63,7 +71,7 @@ void draw() {
     
     y2 = y2 - yShift;
     
-    text("B", x2, y2); // Moving the text up
+    
     
     fill(203, 203, 203);
     noStroke();
@@ -74,7 +82,7 @@ void draw() {
   
   y3 = y3 - yShift;
   
-  text("C", x3, y3); // Moving the text up
+  
   
   fill(203, 203, 203);
   noStroke();
@@ -85,7 +93,7 @@ if (mouseX > x4 - 20 && mouseX < x4 + 20 && mouseY > y4 - 20 && mouseY < y4 + 20
   
   y4 = y4 - yShift;
   
-  text("D", x4, y4);
+  
   
   fill(203, 203, 203);
   noStroke();
