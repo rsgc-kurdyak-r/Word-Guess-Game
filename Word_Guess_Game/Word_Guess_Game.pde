@@ -1,6 +1,6 @@
 // Robert Kurdyak, May 12, 2015
 
-int [] xShift = new int [4];
+
 float yShift = 300; // the letters' vertical shift after being clicked
 float x1 = 82;
 float x2 = 187;
@@ -11,11 +11,6 @@ float y2 = 537;
 float y3 = 537;
 float y4 = 537;
 
-int word = int(random(0, 4));
-String[] pickword = {
-  "fang", 
-  "yarn", 
-  "frog"
 };
 
 void setup() {
